@@ -1,4 +1,4 @@
-# ARIA - Music Streaming Platform
+# ![Logo](Screenshots/ICON.png) ARIA - Music Streaming Platform 
 
 ARIA is a fully-featured music streaming platform designed to give users the ultimate music listening experience. This project was designed using Adobe XD and has been transformed into a real website.
 
