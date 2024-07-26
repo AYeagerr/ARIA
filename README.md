@@ -39,8 +39,7 @@ Here are some screenshots of the ARIA platform:
 
 ### Home Page
 ![Screenshot 1](Screenshots/1.png)
-
-
+## Features
 ![Screenshot 2](Screenshots/2.png)
 
 ![Screenshot 3](Screenshots/3.png)
