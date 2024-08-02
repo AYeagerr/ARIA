@@ -2,7 +2,7 @@
 
 ARIA is a fully-featured music streaming platform designed to give users the ultimate music listening experience. This project was designed using Adobe XD and has been transformed into a real website.
 
-## Disclaimer ⚠️
+## ⚠️ Disclaimer
 
 **Important:** ARIA is a conceptual project and is not a real music streaming platform. This idea is my own creation, and no one is permitted to use or replicate this idea without my explicit permission.
 
