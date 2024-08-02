@@ -17,24 +17,28 @@ ARIA is a fully-featured music streaming platform designed to give users the ult
 ## Premium Plans
 
 - **ARIA Free**
-  - Contains ads
-  - Only one user per account
-  - Free
+  - Access to Basic Features
+  - Limited Storage
+  - Community Support
+  - Regular Updates
 
 - **ARIA Go**
-  - No ads
-  - Up to 5 users per account
-  - $10 per month
-
+ - Access to All Features
+ - Increased Storage
+ - Priority Support
+ - Customizable Interface
+   
 - **ARIA Pro**
-  - No ads
-  - Unlimited users per account
-  - $30 per month
+  - AII Go Plan Features
+  - Advanced Analytics
+  - Unlimited Storage
+  - Premium Support
 
 - **ARIA Elite**
-  - No ads
-  - Unlimited users per account
-  - $50 per month
+ - AII Pro Plan Features
+ - Dedicated Account Manager
+ - Custom Integrations
+ - VIP Support
 
 ## Screenshots
 
