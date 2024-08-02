@@ -23,10 +23,10 @@ ARIA is a fully-featured music streaming platform designed to give users the ult
   - Regular Updates
 
 - **ARIA Go**
- - Access to All Features
- - Increased Storage
- - Priority Support
- - Customizable Interface
+  - Access to All Features
+  - Increased Storage
+  - Priority Support
+  - Customizable Interface
    
 - **ARIA Pro**
   - AII Go Plan Features
@@ -35,7 +35,7 @@ ARIA is a fully-featured music streaming platform designed to give users the ult
   - Premium Support
 
 - **ARIA Elite**
- - AII Pro Plan Features
+  - AII Pro Plan Features
  - Dedicated Account Manager
  - Custom Integrations
  - VIP Support
