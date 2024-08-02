@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    z-index: 1; /* Ensure z-index is lower than navbar */
 }
 
 .f1, .f2, .f3, .f4, .f5 {
@@ -56,9 +57,10 @@
     opacity: 0.2;
 }
 
-.features span{
+.features span {
     color: #ff0055;
 }
+
 @media (max-width: 768px) {
     .f1, .f2, .f3, .f4, .f5 {
         flex-direction: column;

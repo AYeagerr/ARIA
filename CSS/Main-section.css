@@ -23,12 +23,43 @@
 .part2 .logo img {
   height: 15rem;
   margin-bottom: 20px;
+  opacity: 0;
+  transform: scale(0);
+  animation: fadeInScaleUp 2s forwards;
 }
 
 .text {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 40px;
+  position: relative;
+}
+
+.text span {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: textReveal 3s forwards;
+}
+
+@keyframes fadeInScaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes textReveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
 }
 
 .capsule {

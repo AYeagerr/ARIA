@@ -1,31 +1,70 @@
 .navbar {
     background-color: white !important;
-    border-bottom: 1px solid black;
-    z-index: 99000;
+    border-bottom: 1px solid black !important;
+    z-index: 10000 !important;
+    position: -webkit-sticky !important; /* For Safari */
     position: sticky !important;
     top: 0 !important;
+    width: 100% !important;
 }
 
-.navbar img{
-  width: 100px !important;
-  height: auto !important;
+.navbar img {
+    width: 100px !important;
+    height: auto !important;
 }
 
 .navbar-nav .nav-link {
-  color: black !important;
-  font-weight: 450;
-  font-size: 1rem !important;
+    color: black !important;
+    font-weight: 450 !important;
+    font-size: 1rem !important;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ff0055 !important;
-  transition: color 0.3s ease, color 0.3s ease;
+    color: #ff0055 !important;
+    transition: all 0.3s ease !important;
 }
 
 .premium-link {
-  color: #ff0055 !important;
+    color: #ff0055 !important;
 }
 
 .navbar-nav .premium-link:hover {
-  color: #ff0055 !important;
+    color: #ff0055 !important;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav .nav-item {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        margin-left: auto !important;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem !important;
+    }
+}
+
+/* Remove border and outline of the navbar toggler button */
+.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
 }
