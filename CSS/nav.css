@@ -2,8 +2,8 @@
     background-color: white !important;
     border-bottom: 1px solid black;
     z-index: 99000;
-    /* position: sticky !important;
-    top: 0 !important; */
+    position: sticky !important;
+    top: 0 !important;
 }
 
 .navbar img{
@@ -14,7 +14,7 @@
 .navbar-nav .nav-link {
   color: black !important;
   font-weight: 450;
-  font-size: 1.5rem !important;
+  font-size: 1rem !important;
 }
 
 .navbar-nav .nav-link:hover {

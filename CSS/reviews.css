@@ -1,0 +1,126 @@
+.testimonials-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.section-title {
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-left: 9rem;
+}
+
+.section-title h2 {
+  color: #ff0055;
+  font-family: 'Poppins', sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 420px;
+  flex: 1;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
+}
+
+.testimonial:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
+  cursor: pointer;
+}
+
+.user-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem auto;
+}
+
+.user-image img {
+  width: 100%;
+  height: auto;
+}
+
+.testimonial p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.testimonial h3 {
+  font-size: 16px;
+  color: #ff0055;
+}
+
+@media (max-width: 1024px) {
+  .section-title {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .testimonial {
+    max-width: 45%;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial {
+    padding: 1.5rem;
+  }
+
+  .testimonial p {
+    font-size: 16px;
+  }
+
+  .testimonial h3 {
+    font-size: 14px;
+  }
+
+  .user-image {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.testimonial {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.testimonial.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}

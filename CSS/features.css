@@ -21,6 +21,8 @@
 .img-left img, .img-right img {
     width: 70%;
     object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
 .text-left, .text-right {
@@ -115,4 +117,8 @@
     .img-left, .img-right {
         margin-bottom: 0;
     }
+}
+
+.lazy.loaded {
+    opacity: 1;
 }

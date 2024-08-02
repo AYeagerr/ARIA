@@ -15,12 +15,14 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="CSS/General.css">
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/Main-section.css">
     <link rel="stylesheet" href="CSS/features.css">
     <link rel="stylesheet" href="CSS/plans.css">
+    <link rel="stylesheet" href="CSS/reviews.css">
     <link rel="stylesheet" href="CSS/footer.css">
 
     <link rel="icon" type="image/png" href="images/ICON.png">
@@ -39,10 +41,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mx-2">
-                        <a class="nav-link premium-link" href="#">Premium</a>
+                        <a class="nav-link premium-link" href="#plans">Premium</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Support</a>
+                        <a class="nav-link" href="#reviews">Reviews</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="#">Download</a>
@@ -75,10 +77,11 @@
         </div>
     </div>
 
+
     <div class="features" id="f">
         <div class="f1">
             <div class="img-left">
-                <img src="Images/Feature 1.png" alt="Feature 1">
+                <img data-src="Images/Feature 1.png" alt="Feature 1" class="lazy">
             </div>
             <div class="text-right">
                 <img src="Images/Ellipse 1.png" alt="Ellipse 1" class="background-image">
@@ -92,16 +95,16 @@
                 <p>Upload your <span>own music</span> and grow faster as an <span>artist</span></p>
             </div>
             <div class="img-right">
-                <img src="Images/Feature 2.png" alt="Feature 2">
+                <img data-src="Images/Feature 2.png" alt="Feature 2" class="lazy">
             </div>
         </div>
         <div class="f3">
             <div class="img-left">
-                <img src="Images/Feature 3.png" alt="Feature 3">
+                <img data-src="Images/Feature 3.png" alt="Feature 3" class="lazy">
             </div>
             <div class="text-right">
                 <img src="Images/Ellipse 1.png" alt="Ellipse 1" class="background-image">
-                <p>Create your own <span>infinite playlists</span> and enjoy exploring to different genres</p>
+                <p>Create your own <span>infinite playlists</span> and enjoy exploring different genres</p>
             </div>
         </div>
         <div class="f4">
@@ -110,12 +113,12 @@
                 <p>Enjoy streaming music online with your friends with the <span>Party Mode</span></p>
             </div>
             <div class="img-right">
-                <img src="Images/Feature 4.png" alt="Feature 4">
+                <img data-src="Images/Feature 4.png" alt="Feature 4" class="lazy">
             </div>
         </div>
         <div class="f5">
             <div class="img-left">
-                <img src="Images/Feature 5.png" alt="Feature 5">
+                <img data-src="Images/Feature 5.png" alt="Feature 5" class="lazy">
             </div>
             <div class="text-right">
                 <img src="Images/Ellipse 1.png" alt="Ellipse 1" class="background-image">
@@ -124,62 +127,207 @@
         </div>
     </div>
 
-    <div class="plans">
-        <h2 class="title">Go premium!</h2>
-        <p class="pre-title">Join the family</p>
-        <div class="cards">
-            <div class="free">
-                <h2><span>ARIA</span> Free.</h2>
-                <div class="plan-img">
-                    <img src="Images/Free.png" alt="free plan image">
+
+
+
+    <div class="plans-section" id="plans">
+        <div class="plan-title">
+            <h2>Go Premium</h2>
+            <p>Join the family!</p>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="border-F basic-F">
+                            <div class="frame1-F one-F">
+                                <h1 class="B1-F"><span class="aria-F">ARIA</span>&nbsp;Free</h1>
+                            </div>
+                            <div class="image-container">
+                                <img src="Images/Free.png" alt="ARIA Free Image" class="plan-image">
+                            </div>
+                            <div class="price-F">$0/month</div>
+                            <div class="fram1-F">
+                                <button class="button-F But1-F current-plan" disabled>
+                                    <h3>Current Plan</h3>
+                                </button>
+                            </div>
+                            <div class="frm1-F">
+                                <span id="icon1-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text1-F"> Access to Basic Features</span>
+                                <br><br>
+                                <span id="icon1-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text1-F"> Limited Storage</span>
+                                <br><br>
+                                <span id="icon1-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text1-F">Community Support</span>
+                                <br><br>
+                                <span id="icon1-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text1-F"> Regular Updates</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="border-F basic-F">
+                            <div class="frame2-F two-F">
+                                <h1 class="B2-F"><span class="aria-F">ARIA</span>&nbsp;Go</h1>
+                            </div>
+                            <div class="image-container">
+                                <img src="Images/GO.png" alt="ARIA Go Image" class="plan-image">
+                            </div>
+                            <div class="price-F">$10/month</div>
+                            <div class="fram2-F">
+                                <button class="button-F But2-F">
+                                    <h3>Get Started</h3>
+                                </button>
+                            </div>
+                            <div class="frm2-F">
+                                <span id="icon2-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text2-F"> Access to All Features</span>
+                                <br><br>
+                                <span id="icon2-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text2-F"> Increased Storage</span>
+                                <br><br>
+                                <span id="icon2-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text2-F"> Priority Support</span>
+                                <br><br>
+                                <span id="icon2-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text2-F"> Customizable Interface</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="border-F basic-F">
+                            <div class="frame1-F one-F">
+                                <h1 class="B1-F"><span class="aria-F">ARIA</span> &nbsp;Pro</h1>
+                            </div>
+                            <div class="image-container">
+                                <img src="Images/Pro.png" alt="ARIA Pro Image" class="plan-image">
+                            </div>
+                            <div class="price-F">$30/month</div>
+                            <div class="fram1-F">
+                                <button class="button-F But2-F">
+                                    <h3>Get Started</h3>
+                                </button>
+                            </div>
+                            <div class="frm1-F">
+                                <span id="icon1-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text1-F"> All Go Plan Features</span>
+                                <br><br>
+                                <span id="icon1-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text1-F"> Advanced Analytics</span>
+                                <br><br>
+                                <span id="icon1-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text1-F"> Unlimited Storage</span>
+                                <br><br>
+                                <span id="icon1-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text1-F"> Premium Support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="border-F basic-F">
+                            <div class="frame2-F two-F">
+                                <h1 class="B2-F"><span class="aria-F">ARIA</span>&nbsp;Elite</h1>
+                            </div>
+                            <div class="image-container">
+                                <img src="Images/Elite.png" alt="ARIA Elite Image" class="plan-image">
+                            </div>
+                            <div class="price-F">$50/month</div>
+                            <div class="fram2-F">
+                                <button class="button-F But2-F">
+                                    <h3>Get Started</h3>
+                                </button>
+                            </div>
+                            <div class="frm2-F">
+                                <span id="icon2-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text2-F"> All Pro Plan Features</span>
+                                <br><br>
+                                <span id="icon2-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text2-F"> Dedicated Account Manager</span>
+                                <br><br>
+                                <span id="icon2-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text2-F"> Custom Integrations</span>
+                                <br><br>
+                                <span id="icon2-F">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+                                <span class="text2-F"> VIP Support</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="price">
-                    <p class="money">$0</p>
-                    <p class="duration">per month.</p>
-                </div>
-                <ul>
-                    <li>Contain ADs</li>
-                    <li>One user per account</li>
-                </ul>
-                <a href="#" class="btn">Current Plan</a>
-            </div>
-            <div class="go">
-                <h2><span>ARIA</span> Go.</h2>
-                <div class="plan-img">
-                    <img src="Images/GO.png" alt="free plan image">
-                </div>
-                <div class="price">
-                    <p class="money">$5</p>
-                    <p class="duration">per month.</p>
-                </div>
-                <ul>
-                    <li>No ADs</li>
-                    <li>Three users per account</li>
-                </ul>
-                <a href="#" class="btn">Get Started</a>
-            </div>
-            <div class="pro">
-                <h2><span>ARIA</span> Pro.</h2>
-                <div class="plan-img">
-                    <img src="Images/Pro.png" alt="free plan image">
-                </div>
-                <div class="price">
-                    <p class="money">$10</p>
-                    <p class="duration">per month.</p>
-                </div>
-                <ul>
-                    <li>No ADs</li>
-                    <li>Five users per account</li>
-                </ul>
-                <a href="#" class="btn">Get Started</a>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
-        <p style="text-align: center; margin: 1rem; font-size: 20px;">or start our <span><a href="#"
-                    style="color: #ff0055; text-decoration: none; font-size: 20px;">Students plan</a></span></p>
     </div>
 
 
-    <footer class="footer">
+    <div class="testimonials-section" id="reviews">
+        <div class="section-title">
+            <h2>What Our Users Say</h2>
+        </div>
+        <div class="testimonials">
+            <div class="testimonial">
+                <div class="user-image">
+                    <img src="Images/Eren.jpg" alt="User 1">
+                </div>
+                <p>"ARIA has changed the way I listen to music. The interface is so user-friendly and the features are
+                    amazing!"</p>
+                <h3>- Eren Yeager</h3>
+            </div>
+            <div class="testimonial">
+                <div class="user-image">
+                    <img src="Images/walter.jpg" alt="User 2">
+                </div>
+                <p>"I love being able to upload my own music and share it with others. ARIA has helped me grow as an
+                    artist."</p>
+                <h3>- Walter White</h3>
+            </div>
+            <div class="testimonial">
+                <div class="user-image">
+                    <img src="Images/Gojo.jpg" alt="User 3">
+                </div>
+                <p>"The customer support is excellent. They are always ready to help and solve any issues I have."</p>
+                <h3>- The Honored One</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer" id="footer">
         <div class="footer-content">
             <div class="logo">
                 <img src="Images/ARIA Logo white.png" alt="ARIA Logo">
@@ -198,7 +346,7 @@
             <div class="social-media">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -218,6 +366,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="JS/swiper.js"></script>
+    <script src="JS/Capsule animation.js"></script>
+    <script src="JS/Lazy Loading.js"></script>
+    <script src="JS/fade.js"></script>
+
 </body>
 
 </html>

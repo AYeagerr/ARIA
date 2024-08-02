@@ -5,7 +5,7 @@
   align-items: center;
   height: 100vh;
   width: 100%;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .part1, .part3 {
@@ -39,15 +39,16 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  animation: bounce 2s infinite;
 }
 
 .capsule a {
-  width: 100%;  /* Make the anchor tag fill the capsule */
-  height: 100%; /* Make the anchor tag fill the capsule */
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  text-decoration: none; /* Remove underline from the link */
+  text-decoration: none;
 }
 
 .inner-line {
@@ -65,11 +66,60 @@
 
 .blob-img {
   width: 100%;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
 }
 
+.part1 .blob-img {
+  animation-name: fadeInLeft;
+}
+
+.part3 .blob-img {
+  animation-name: fadeInRight;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 @media (max-width: 480px) {
-   .main {
+  .main {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
