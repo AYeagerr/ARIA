@@ -36,9 +36,9 @@ ARIA is a fully-featured music streaming platform designed to give users the ult
 
 - **ARIA Elite**
   - AII Pro Plan Features
- - Dedicated Account Manager
- - Custom Integrations
- - VIP Support
+   - Dedicated Account Manager
+   - Custom Integrations
+   - VIP Support
 
 ## Screenshots
 
