@@ -13,19 +13,9 @@
     border-radius: 10px;
     font-size: 18px;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
     visibility: hidden;
 }
 
-#goToTopBtn.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-#goToTopBtn.hide {
-    opacity: 0;
-    visibility: hidden;
-}
 
 #goToTopBtn:hover {
     background-color: #555;
