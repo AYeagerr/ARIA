@@ -1,6 +1,6 @@
 # <img src="Screenshots/ICON.png" alt="Logo" width="50" height="50"> ARIA - Music Streaming Platform 
 
-ARIA is a fully-featured music streaming platform designed to give users the ultimate music listening experience. This project was designed using Adobe XD and has been transformed into a real website.
+ARIA is a fully-featured music streaming platform designed to give users the ultimate music listening experience. This project was designed using Adobe XD and has been transformed into a real website with stunning animations powered by GSAP.
 
 ## ⚠️ Disclaimer
 
@@ -29,16 +29,16 @@ ARIA is a fully-featured music streaming platform designed to give users the ult
   - Customizable Interface
    
 - **ARIA Pro**
-  - AII Go Plan Features
+  - All Go Plan Features
   - Advanced Analytics
   - Unlimited Storage
   - Premium Support
 
 - **ARIA Elite**
-  - AII Pro Plan Features
-   - Dedicated Account Manager
-   - Custom Integrations
-   - VIP Support
+  - All Pro Plan Features
+  - Dedicated Account Manager
+  - Custom Integrations
+  - VIP Support
 
 ## Screenshots
 
@@ -69,17 +69,22 @@ Here are some screenshots of the ARIA platform:
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
-- Adobe XD
+- **HTML**: Structure of the website.
+- **CSS**: Styling and responsive design.
+- **JavaScript**: Interactive functionality and animations.
+- **GSAP (GreenSock Animation Platform)**: Advanced animations for a smooth and dynamic user experience.
+- **Swiper.js**: Responsive sliders for the premium plans section.
+- **Bootstrap**: Responsive layout and components.
+- **Adobe XD**: Initial design and prototyping.
 
 ## JavaScript Features
 
-- **Swiper.js:** Used for creating responsive sliders for the premium plans section.
-- **Lazy Loading:** Implemented to load images as the user scrolls, improving page load times and performance.
-- **Scroll to Top Button:** Added for better user navigation, with a smooth scroll effect.
-- **Capsule Animation:** Custom animation for enhanced user interaction.
+- **GSAP Animations**: 
+  - Smooth entrance animations for the navbar, main section (blobs, logo, text, capsule), features, premium plans, testimonials, and footer.
+  - Scroll-triggered animations for sections as they enter the viewport.
+  - Dynamic loading screen fade-out and a polished scroll-to-top button effect.
+- **Swiper.js**: Responsive slider for the premium plans section with breakpoint adjustments.
+- **Lazy Loading**: Images load as users scroll, optimizing performance and reducing initial page load time.
 
 ### This website is fully responsive!
 
